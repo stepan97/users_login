@@ -1,0 +1,11 @@
+//Hello,<br> Please Click on the link to verify your email.<br><a href="+link+">Click here to verify</a>
+
+doctype transitional
+html
+  head
+    meta(http-equiv = 'Content-Type', content = 'text/html; charset=UTF-8')
+    title= subject
+    body
+      h1.h1 Hello
+      p Please Click on the link to verify your email. 
+        a(href="#{linkToActivate}") Click here to verify

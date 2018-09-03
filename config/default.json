@@ -1,0 +1,10 @@
+{
+    "dbConStr" : "", 
+    "jwtPrivateKey" : "", 
+    "mySendgridApiKey" : "", 
+    "mySendgridPassword" : "", 
+    "facebookclientID": "",
+    "facebookclientSecret": "",
+    "googleclientID": "",
+    "googleclientSecret": ""
+}

@@ -1,0 +1,89 @@
+{"level":"info","message":"connected to db.","timestamp":"2018-08-25T13:07:20.588Z"}
+{"name":"MongoNetworkError","errorLabels":["TransientTransactionError"],"level":"error","timestamp":"2018-08-25T13:07:26.419Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-25T13:07:51.555Z"}
+{"ok":0,"errmsg":"Authentication failed.","code":18,"codeName":"AuthenticationFailed","operationTime":"6593644401388421121","$clusterTime":{"clusterTime":"6593644401388421121","signature":{"hash":"A3xlQGJZr7WNx1TgRg+kDe2GwGE=","keyId":"6580402196876099585"}},"name":"MongoError","level":"error","timestamp":"2018-08-25T13:07:53.171Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-25T13:09:32.106Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-29T16:29:01.225Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-29T18:24:32.498Z"}
+{"statusCode":500,"level":"error","timestamp":"2018-08-29T18:28:51.708Z"}
+{"statusCode":500,"level":"error","timestamp":"2018-08-29T18:31:09.574Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-29T18:32:57.098Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-29T18:54:28.456Z"}
+{"statusCode":500,"level":"error","timestamp":"2018-08-29T18:55:57.748Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-29T19:00:41.488Z"}
+{"statusCode":500,"level":"error","timestamp":"2018-08-29T19:01:05.685Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-29T19:02:02.717Z"}
+{"errors":{"local.name":{"message":"Path `local.name` is required.","name":"ValidatorError","properties":{"message":"Path `local.name` is required.","type":"required","path":"local.name"},"kind":"required","path":"local.name","$isValidatorError":true}},"_message":"User validation failed","name":"ValidationError","statusCode":500,"level":"error","timestamp":"2018-08-29T19:02:05.723Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-29T19:02:24.631Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-29T19:04:47.696Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T10:16:05.799Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T10:29:24.561Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T10:30:44.167Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T10:32:28.195Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T10:45:41.019Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T16:50:10.761Z"}
+{"driver":true,"name":"MongoError","level":"error","timestamp":"2018-08-30T16:50:12.188Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T16:50:21.071Z"}
+{"driver":true,"name":"MongoError","level":"error","timestamp":"2018-08-30T16:50:22.497Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T16:50:53.878Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T16:51:28.860Z"}
+{"statusCode":400,"level":"error","timestamp":"2018-08-30T16:53:49.910Z"}
+{"statusCode":400,"level":"error","timestamp":"2018-08-30T16:54:06.155Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T16:56:20.447Z"}
+{"statusCode":400,"level":"error","timestamp":"2018-08-30T16:56:28.772Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T16:58:15.574Z"}
+{"statusCode":400,"level":"error","timestamp":"2018-08-30T16:58:33.682Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T17:00:13.790Z"}
+{"driver":true,"name":"MongoError","index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: users_login.users index: email_1 dup key: { : null }","level":"error","timestamp":"2018-08-30T17:00:22.310Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T17:04:47.742Z"}
+{"statusCode":400,"level":"error","timestamp":"2018-08-30T17:07:17.668Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T17:12:07.501Z"}
+{"statusCode":500,"level":"error","timestamp":"2018-08-30T17:13:24.895Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T17:21:03.068Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T17:21:48.778Z"}
+{"statusCode":400,"level":"error","timestamp":"2018-08-30T17:21:58.156Z"}
+{"statusCode":500,"level":"error","timestamp":"2018-08-30T17:22:01.127Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T17:22:23.531Z"}
+{"statusCode":500,"level":"error","timestamp":"2018-08-30T17:23:22.419Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T17:24:26.045Z"}
+{"level":"error","timestamp":"2018-08-30T17:25:19.094Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T17:28:35.335Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T17:29:21.063Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T17:30:13.337Z"}
+{"level":"error","timestamp":"2018-08-30T17:30:21.050Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T17:31:24.415Z"}
+{"level":"error","timestamp":"2018-08-30T17:31:29.652Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T17:33:01.663Z"}
+{"statusCode":500,"level":"error","timestamp":"2018-08-30T17:33:28.672Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T17:49:06.522Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T17:51:35.857Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T17:52:29.062Z"}
+{"statusCode":500,"level":"error","timestamp":"2018-08-30T17:52:35.240Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T17:52:49.317Z"}
+{"errno":-4058,"syscall":"open","code":"ENOENT","path":"C:\\Users\\userAsef\\Desktop\\node_projects\\error_middleware_demo\\views\\newPasswordPage.jade","statusCode":500,"level":"error","timestamp":"2018-08-30T17:53:11.412Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T17:53:57.082Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T18:13:34.700Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T18:15:04.415Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T18:17:58.390Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T18:20:38.904Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T18:21:45.362Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T18:24:22.052Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T18:25:40.825Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T18:26:54.161Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T18:27:23.339Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T18:31:35.305Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T18:32:25.547Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T18:40:22.546Z"}
+{"statusCode":500,"level":"error","timestamp":"2018-08-30T18:40:31.009Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T18:41:10.193Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T18:42:42.861Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T18:46:29.873Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T18:49:12.646Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T18:52:55.021Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T18:56:21.644Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T18:59:29.239Z"}
+{"statusCode":500,"level":"error","timestamp":"2018-08-30T18:59:38.038Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T19:00:07.526Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T19:01:54.184Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T19:02:24.519Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-08-30T19:04:58.239Z"}

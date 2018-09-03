@@ -1,0 +1,10 @@
+{
+    "dbConStr" : "stepan_db",
+    "jwtPrivateKey" : "errorDemoKey",
+    "mySendgridApiKey" : "sendgridApiKey",
+    "mySendgridPassword" : "sendgridPassword",
+    "facebookclientID": "facebookClientID",
+    "facebookclientSecret": "facebookClientSecret",
+    "googleclientID": "googleClientID",
+    "googleclientSecret": "googleClientSecret"
+}

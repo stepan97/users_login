@@ -1,0 +1,6 @@
+{
+    "name" : "Users login app - Production",
+    "mail" : {
+        "host" : "prod-mail-server"
+    }
+}
