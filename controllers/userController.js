@@ -251,4 +251,4 @@ let Controller = {
     }
 };
 
-module.exports = userController;
+module.exports = Controller;
