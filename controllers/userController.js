@@ -4,9 +4,6 @@ const {User, validateUserRegistration, validateUserForLogin} = require('../model
 const _ = require('lodash');
 const {ConfirmEmail, generateRandomHashForEmail} = require('../models/confirmEmailModel');
 const emailUtils = require('../email_verification/email');
-const passport = require('passport');
-
-
 
 let Controller = {
     login: async function(req, res, next) {
