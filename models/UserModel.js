@@ -52,10 +52,10 @@ userSchema.methods.generateAuthToken = function() {
     );
     
     return token;
-  }
+}
 
-function validateUserRegistration(user)
-{
+
+  function validateUserRegistration(user){
     const schema = {
         name: joi.string().min(5).max(25).required(),
         email: joi.string().required().email(),
@@ -65,8 +65,7 @@ function validateUserRegistration(user)
     return joi.validate(user, schema);
 }
 
-function validateUserLogin(user)
-{
+function validateUserLogin(user){
     const schema = {
         email: joi.string().required().email(),
         password: joi.string().min(6).max(1024).required()
@@ -77,4 +76,4 @@ function validateUserLogin(user)
 
 module.exports.User = mongoose.model('User', userSchema);
 module.exports.validateUserRegistration = validateUserRegistration;
-module.exports.validateUserLogin = validateUserLogin;
+module.exports.validateUserForLogin = validateUserLogin;
