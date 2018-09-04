@@ -150,7 +150,7 @@ let Controller = {
             return next(err);
         }
     
-        let user = await User.findOne({"local.email": req.body.email});
+        let user = await User.findOne({email: req.body.email});
         if(user) {
             let err = new Error("User with this email already exists.");
             err.statusCode = 400;
