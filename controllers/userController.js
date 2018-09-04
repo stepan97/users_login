@@ -160,7 +160,7 @@ let Controller = {
         // user = new User(_.pick(req.body, ['name', 'email', 'password']));
         user = new User({
             method: "local",
-            active: true,
+            active: false,
             name: req.body.name,
             email: req.body.email,
             local:{
