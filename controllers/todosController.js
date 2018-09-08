@@ -2,6 +2,7 @@
 // const _ = require('lodash');
 
 const {Todo, validateTodo} = require('../models/TodoModel');
+const User = require('../models/UserModel').User;
 
 let Controller = {
     addTodo: async function(req, res, next){
