@@ -14,7 +14,7 @@ const todoSchema = new mongoose.Schema({
         type: String
     },
     isDone: {
-        type: bool
+        type: Boolean
     },
     createdAt: {
         type: Date // Date.now()

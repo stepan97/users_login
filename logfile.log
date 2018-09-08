@@ -87,3 +87,6 @@
 {"level":"info","message":"connected to db.","timestamp":"2018-08-30T19:01:54.184Z"}
 {"level":"info","message":"connected to db.","timestamp":"2018-08-30T19:02:24.519Z"}
 {"level":"info","message":"connected to db.","timestamp":"2018-08-30T19:04:58.239Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-09-08T12:37:29.487Z"}
+{"name":"MongoNetworkError","errorLabels":["TransientTransactionError"],"level":"error","timestamp":"2018-09-08T12:37:39.306Z"}
+{"level":"info","message":"connected to db.","timestamp":"2018-09-08T12:38:26.557Z"}
