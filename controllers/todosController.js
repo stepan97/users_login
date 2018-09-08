@@ -24,13 +24,12 @@ let Controller = {
             user: req.user._id,
             title: req.body.title,
             description: req.body.description,
-            isDone: req.body.isDone,
+            isDone: req.body.isDone || false,
             createdAt: Date.now()
         });
 
         await newTodo.save();
-        // newTodo.user.name = user.name;
-        // newTodo.user._id = user._id;
+        // chilnum es takiny
         newTodo.user = {
             _id: user._id,
             name: user.name
