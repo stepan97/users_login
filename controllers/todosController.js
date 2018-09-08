@@ -99,7 +99,7 @@ let Controller = {
         }
 
         const user = await User.findById(req.user._id);
-        if(!userAuth){
+        if(!user){
             let error = new Error("Invalid user ID.");
             error.statusCode = 404;
             return next(error);
