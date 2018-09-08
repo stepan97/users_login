@@ -53,7 +53,7 @@ let Controller = {
         }
         
         user.name = req.body.name;
-        user.save();
+        await user.save();
         res.send(_.pick(user, ["_id", "name", "email"]));
     },
 
