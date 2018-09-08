@@ -4,6 +4,7 @@ const {User, validateUserRegistration, validateUserForLogin} = require('../model
 const _ = require('lodash');
 const {ConfirmEmail, generateRandomHashForEmail} = require('../models/confirmEmailModel');
 const emailUtils = require('../email_verification/email');
+const Todo = require('../models/TodoModel').Todo;
 
 let Controller = {
     login: async function(req, res, next) {
@@ -72,6 +73,8 @@ let Controller = {
             return next(error);
         }
     
+        await Todo.remove({user: user._id});
+
         await user.remove();
         res.send(_.pick(user, ['_id', 'name', 'email']));
     },
