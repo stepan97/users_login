@@ -4,6 +4,8 @@ const auth = require('../middleware/auth');
 
 let router = express.Router();
 
+router.get('/getAll', auth, todosController.getAllTodos);
+
 router.post('/addTodo', auth, todosController.addTodo);
 
 router.post('/addTodos', auth, todosController.addTodos);
@@ -12,6 +14,6 @@ router.put('/updateTodo/:id', auth, todosController.updateTodo);
 
 router.delete('/deleteTodo/:id', auth, todosController.deleteTodo);
 
-router.get('/getAll', auth, todosController.getAllTodos);
+router.delete('/deleteAll/:id', auth, todosController.deleteAll);
 
 module.exports = router;

@@ -99,6 +99,19 @@ let Controller = {
         res.send(todo);
     },
 
+    deleteAll: async function(req, res, next){
+        const user = await User.findById(req.user._id);
+        if(!user){
+            let error = new Error("Invalid user ID.");
+            error.statusCode = 404;
+            return next(error);
+        }
+
+        await Todo.remove({user: user._id});
+        
+        res.send(todo);
+    },
+
     updateTodo: async function(req, res, next){
         const user = await User.findById(req.user._id);
         if(!user){
