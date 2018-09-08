@@ -24,7 +24,6 @@ const todoSchema = new mongoose.Schema({
 
 function validateTodo(todo){
     const schema = {
-        userId: joi.objectId.required(),
         title: joi.string().required(),
         description: joi.string(),
         isDone: joi.bool().default(false)
