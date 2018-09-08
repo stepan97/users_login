@@ -8,7 +8,7 @@ let router = express.Router();
 router.post('/', userController.register);
 
 // verifyemail for local registration
-router.get('/verifyemail/:id', userController.verifyEmailLocalRegistration);
+router.get('/verifyemail/:id(.*)', userController.verifyEmailLocalRegistration);
 
 // google login/registration
 router.post('/oauth/google', 
