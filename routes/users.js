@@ -12,7 +12,7 @@ router.delete('/deleteAccount/:id', auth, userController.deleteAccount);
 
 router.post('/forgot', userController.forgot);
 
-router.get('/reset/:token', userController.resetToken);
+router.get('/reset/:token(.*)', userController.resetToken);
 
 router.post('/reset', userController.reset);
 
