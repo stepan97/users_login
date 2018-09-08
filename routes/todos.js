@@ -14,6 +14,6 @@ router.put('/updateTodo/:id', auth, todosController.updateTodo);
 
 router.delete('/deleteTodo/:id', auth, todosController.deleteTodo);
 
-router.delete('/deleteAll/:id', auth, todosController.deleteAll);
+router.delete('/deleteAll', auth, todosController.deleteAll);
 
 module.exports = router;
