@@ -29,8 +29,12 @@ let Controller = {
         });
 
         await newTodo.save();
-        newTodo.user.name = user.name;
-        newTodo.user._id = user._id;
+        // newTodo.user.name = user.name;
+        // newTodo.user._id = user._id;
+        newTodo.user = {
+            _id: user._id,
+            name: user.name
+        }
         res.json(newTodo);
     },
 
