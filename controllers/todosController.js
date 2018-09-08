@@ -109,7 +109,7 @@ let Controller = {
 
         await Todo.remove({user: user._id});
         
-        res.send(todo);
+        res.send("Deleted all todos for user: " + user.name);
     },
 
     updateTodo: async function(req, res, next){
