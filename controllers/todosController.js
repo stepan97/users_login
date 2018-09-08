@@ -37,6 +37,43 @@ let Controller = {
         res.json(newTodo);
     },
 
+    addTodos: async function(req, res, next){
+        const user = await User.findById(req.user._id);
+        if(!user){
+            let error = new Error("Invalid user ID.");
+            error.statusCode = 404;
+            return next(error);
+        }
+
+        // console.log(req.body);
+
+        let todos = req.body;
+        let unSaved = new Array();
+        let arrIndex = 0;
+
+        for (let i = 0; i < todos.length; i++) {
+            var todo = todos[i];
+
+            const {error} = validateTodo(todo);
+            if(error) {
+                unSaved[arrIndex] = todo;
+                continue;
+            }
+
+            let newTodo = new Todo({
+                user: req.user._id,
+                title: todo.title,
+                description: todo.description,
+                isDone: todo.isDone || false,
+                createdAt: Date.now()
+            });
+
+            await newTodo.save();
+        }
+
+        res.json(unSaved);
+    },
+
     deleteTodo: async function(req, res, next){
         const user = await User.findById(req.user._id);
         if(!user){
