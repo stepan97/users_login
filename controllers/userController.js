@@ -171,7 +171,8 @@ let Controller = {
         user.local.password = await bcrypt.hash(user.local.password, salt);
     
         // create hash for db
-        const confirmHash = await generateRandomHashForEmail();
+        let confirmHash = await generateRandomHashForEmail();
+        confirmHash = confirmHash.replace('\/', '');
         const confirmEmail = new ConfirmEmail({
             confirmHash: confirmHash, 
             userID: user._id
