@@ -6,6 +6,11 @@ const {ConfirmEmail, generateRandomHashForEmail} = require('../models/confirmEma
 const emailUtils = require('../email_verification/email');
 const Todo = require('../models/TodoModel').Todo;
 
+String.prototype.replaceAll = function(str1, str2, ignore) 
+{
+    return this.replace(new RegExp(str1.replace(/([\/\,\!\\\^\$\{\}\[\]\(\)\.\*\+\?\|\<\>\-\&])/g,"\\$&"),(ignore?"gi":"g")),(typeof(str2)=="string")?str2.replace(/\$/g,"$$$$"):str2);
+} 
+
 let Controller = {
     login: async function(req, res, next) {
         const {error} = validateUserForLogin(req.body);
@@ -84,7 +89,7 @@ let Controller = {
         const random = Math.random().toString();
         const salt = await bcrypt.genSalt(10);
         let token = await bcrypt.hash(current_date + random, salt);
-        token = token.replace("\/", "");
+        token = token.replaceAll("/", "a");
     
         let user = await User.findOne({ email: req.body.email });
         if (!user) {
