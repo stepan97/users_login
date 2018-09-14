@@ -64,17 +64,10 @@ let Controller = {
     },
 
     deleteAccount: async function(req, res, next){
-        const user = await User.findById(req.params.id);
+        const user = await User.findById(req.user._id);
         if(!user){
             let error = new Error("Invalid user ID.");
             error.statusCode = 400;
-            return next(error);
-        }
-    
-        if(!(String(user._id) === String(req.user._id)))
-        {
-            let error = new Error("You cannot delete this user.");
-            error.statusCode = 403;
             return next(error);
         }
     
@@ -254,6 +247,23 @@ let Controller = {
                 const user = new User(req.user);
                 const token = user.generateAuthToken();
                 res.status(200).json({token});
+    },
+
+    getOtherUserData: async(req, res, next) => {
+        const user = await User.findById(req.user._id);
+        if(!user){
+            let error = new Error("Invalid user ID.");
+            error.statusCode = 404;
+            next(error);
+        }
+        
+        
+        var myJson = {
+            msg: "You are accessing this user: ",
+            theUser: user
+        };
+
+        res.json(myJson);
     }
 };
 
