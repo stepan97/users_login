@@ -154,9 +154,8 @@ let Controller = {
             return next(error);
         }
 
-        const todos = await Todo
-            .find({user: userID})
-            .populate('user', "name");
+        const todos = await Todo.find({user: userID});
+            // .populate('user', "name");
         if(!todos){
             let error = new Error("Invalid esiminch.");
             error.statusCode = 404;
